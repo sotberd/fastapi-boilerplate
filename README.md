@@ -62,7 +62,7 @@ To set up the project locally, follow these steps:
 
 3. Install the development dependencies:
    ```bash
-   pip install -r requirements.txt
+   pip install -r requirements.dev.txt
    ```
 
 ### Running the API
