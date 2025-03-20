@@ -1,0 +1,59 @@
+[project]
+name = "fastapi-boilerplate"
+version = "1.0.0"
+description = "FastAPI boilerplate project"
+readme = "README.md"
+requires-python = ">=3.11"
+license = {text = "MIT"}
+
+# Main dependencies (based on your provided requirements)
+dependencies = [
+    "fastapi[standard]==0.115.0",
+    "pydantic==2.8.2",
+    "pydantic-settings==2.4.0",
+    "python-dotenv==0.21.1",
+    "typer==0.12.3",
+    "tqdm==4.65.0",
+    "requests==2.32.3"
+]
+
+[tool.ruff]
+target-version = "py311"
+
+[tool.ruff.lint]
+select = [
+    "E",  # pycodestyle errors
+    "W",  # pycodestyle warnings
+    "F",  # pyflakes
+    "I",  # isort
+    "B",  # flake8-bugbear
+    "C4",  # flake8-comprehensions
+    "UP",  # pyupgrade
+    "ARG001", # unused arguments in functions
+]
+ignore = [
+    "E501",  # line too long, handled by black
+    "B008",  # do not perform function calls in argument defaults
+    "W191",  # indentation contains tabs
+    "B904",  # Allow raising exceptions without from e, for HTTPException
+]
+
+[tool.ruff.lint.pyupgrade]
+# Preserve types, even if a file imports `from __future__ import annotations`.
+keep-runtime-typing = true
+
+[tool.pytest.ini_options]
+minversion = "6.0"
+addopts = "-ra -q"
+testpaths = [
+    "tests",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest==8.3.2",
+    "pytest-order==1.1.0",
+    "pytest-cov==5.0.0",
+    "ruff==0.5.7",
+    "pre-commit==3.8.0",
+]

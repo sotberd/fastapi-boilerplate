@@ -1,0 +1,6 @@
+# Project dependencies
+fastapi[standard]==0.115.0
+pydantic==2.8.2
+pydantic-settings==2.4.0
+python-dotenv==0.21.1
+requests==2.32.3

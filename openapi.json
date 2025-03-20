@@ -1,0 +1,18 @@
+{
+  "info": {
+    "termsOfService": "http://swagger.io/terms/",
+    "contact": {
+      "name": "API Support",
+      "email": "sotiriosn.berdes@gmail.com",
+      "url": "https://github.com/sotberd/fastapi-boilerplate"
+    },
+    "license": {
+      "name": "MIT",
+      "url": "https://opensource.org/licenses/MIT"
+    },
+    "x-logo": {
+      "url": "https://camo.githubusercontent.com/4ebb06d037b495f2c4c67e0ee4599f747e94e6323ece758a7da27fbbcb411250/68747470733a2f2f666173746170692e7469616e676f6c6f2e636f6d2f696d672f6c6f676f2d6d617267696e2f6c6f676f2d7465616c2e706e67",
+      "altText": "fastapi-boilerplate-logo"
+    }
+  }
+}
